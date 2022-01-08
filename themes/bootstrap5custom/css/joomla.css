@@ -1,0 +1,109 @@
+
+h1 {
+	/* templatemod.css*/
+	font-size: 20px!important;
+}
+h2 {
+	font-size: 18px!important;
+	line-height: 34px!important;
+}
+
+
+h1, h2 ,h3{
+	border-bottom: none!important;
+}
+
+
+h4, h5, h6 {
+	border-bottom: none !important;
+	margin: 8px 0 6px 0!important;
+}
+
+
+h4 {
+	font-size :14px! important;
+}
+
+h5 {
+	font-size :12px! important;
+}
+
+h3 {
+    font-size: 18px !important;
+    line-height: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+	
+	.offset1_2,.offset1-2 {
+		margin-left: 32px !important;
+	}
+	.row-fluid .offset1_2,.row-fluid .offset1-2 {
+		margin-left: 2.32% !important;
+		*margin-left: 2.25% !important;
+	}
+}
+
+@media (min-width: 980px) and (max-width: 1199px) {
+	
+	.offset1_2,.offset1-2 {
+		margin-left: 40px !important;
+	}
+	.row-fluid .offset1_2,.row-fluid .offset1-2 {
+		margin-left: 3.32% !important;
+		*margin-left: 3.25% !important;
+	}
+}
+
+@media (min-width: 1200px) {
+	
+	.offset1_2,.offset1-2 {
+		margin-left: 50px !important;
+	}
+	.row-fluid .offset1_2,.row-fluid .offset1-2 {
+		margin-left: 5.32% !important;
+		*margin-left: 5.25% !important;
+	}
+	.a-propos 
+	{
+		position: absolute; 
+		right: 15%;
+	}
+}
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+	.offset1_4,.offset1-4 {
+		margin-left: 16px !important;
+	}
+	.row-fluid .offset1_4,.offset1-4 {
+		margin-left: 0.66% !important;
+		*margin-left: 0.52% !important;
+	}
+}
+
+@media (min-width: 980px) and (max-width: 1199px) {
+	.offset1_4,.offset1-4 {
+		margin-left: 20px !important;
+	}
+	.row-fluid .offset1_4,.offset1-4 {
+		margin-left: 1.16% !important;
+		*margin-left: 1.12% !important;
+	}
+}
+
+@media (min-width: 1200px) {
+	.offset1_4,.offset1-4 {
+		margin-left: 25px !important;
+	}
+	.row-fluid .offset1_4,.offset1-4 {
+		margin-left: 2.16% !important;
+		*margin-left: 2.12% !important;
+	}
+	.span6 {
+		width: 420px!important;
+	}
+	.brand {
+		min-height: 100px;
+	}
+}
