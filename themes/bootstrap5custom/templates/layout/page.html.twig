@@ -121,11 +121,19 @@ set footer_classes = ' ' ~
     </div>
   </div>
  
-	
+{% if page.nav_horz_zone_1 or page.horz_zone_2 or page.horz_zone_3 %}	
 	 <div class="row">
-		{{ page.horz_zone }}
+		<div class="col-lg-4">
+			{{ page.horz_zone_1 }}
+		</div>
+		<div class="col-lg-4">
+			{{ page.horz_zone_2 }}
+		</div>
+		<div class="col-lg-4">
+			{{ page.horz_zone_3 }}
+		</div>
 	</div>
-	
+{% endif %}	
   
 </main>
 

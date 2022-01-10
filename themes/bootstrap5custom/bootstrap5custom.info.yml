@@ -22,7 +22,9 @@ regions:
   content: 'Main content'
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar second'
-  horz_zone : zone under article
+  horz_zone_1 : zone 1 under article
+  horz_zone_2 : zone 2 under article
+  horz_zone_3 : zone 3 under article
   footer: Footer
 
 # Information added by Drupal.org packaging script on 2021-11-16
