@@ -41,3 +41,31 @@ body .flex-column {
 	position: relative;
 	float: right;
 }
+
+.node--type-blog, .node--type-page
+{
+	border:solid 1px #ddd;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border-top-style:solid;
+	border-right-style:solid;
+	border-bottom-style:solid;
+	border-left-style:solid;
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+}
+
+.dropdown-menu {
+  font-size: 0.8rem;
+}
+
+
+
+div.mw-geshi {
+    border: 1px dashed #2F6FAB;
+    margin:  0;
+    padding: 5px;
+	background-color: #FFFFFF !important;
+}
