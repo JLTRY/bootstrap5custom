@@ -3,9 +3,6 @@ global-custom-styling:
     theme:
       css/stylemod.css: {}
       css/joomla.css: {}
-      css/css3treeview.css: {}
-
-
 
 style-guide:
   version: '5.1.3'

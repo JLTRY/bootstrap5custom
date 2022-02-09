@@ -69,3 +69,7 @@ div.mw-geshi {
     padding: 5px;
 	background-color: #FFFFFF !important;
 }
+
+button a {
+	text-decoration:none;
+}
