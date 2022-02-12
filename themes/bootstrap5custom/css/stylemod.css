@@ -73,3 +73,12 @@ div.mw-geshi {
 button a {
 	text-decoration:none;
 }
+
+
+span.field-content a
+{
+	background: transparent url(./icons.png) center left no-repeat;
+    padding-left: 20px;
+	background-size: 16px;
+	background-position: 0 -48px;
+}	

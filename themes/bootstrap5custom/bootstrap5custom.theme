@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * bootstrap5custom theme file.
+ */
+
+
+/**
+ * Implements theme_preprocess_taxonomy_term().
+ */
+function bootstrap5custom_preprocess_field(&$variables, $hook) {
+  $element = $variables['element'];
+  if (isset($element['#field_name'])) {
+	 // print_r( $element['#field_name']); 
+    if (strpos($element['#field_name'], 'category')!== false) {
+        $variables['element']['#classes_array'] = ['btn'];
+		//unset( $variables['classes_array'][array_search( 'field--label-hidden', $variables['classes_array'] )] );
+		//$variables['items'][0]['#markup'] = 'add custom markup';
+    }
+  }
+}
