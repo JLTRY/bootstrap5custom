@@ -57,7 +57,7 @@
   {% if multiple %}   
     <span{{ attributes.addClass(classes, 'field__items') }} style="display:inline;">    
       {% for item in items %}
-        <span{{ item.attributes.addClass('field__item') }}>{{ item.content }}</span>
+        <span{{ item.attributes.addClass('field__item') }}><button class="btn btn-info">{{ item.content }}</button></span>
       {% endfor %}
     </span>
   {% else %}
@@ -70,8 +70,7 @@
     {% if multiple %}
       <span class="field__items">
     {% endif %}
-    {% for item in items %}
-	  
+    {% for item in items %}	  
       <span{{ item.attributes.addClass('field__item') }}><button class="btn btn-info">{{ item.content }}</button></span>
     {% endfor %}
     {% if multiple %}

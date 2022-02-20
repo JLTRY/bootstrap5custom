@@ -60,11 +60,15 @@ set footer_classes = ' ' ~
   {{ page.header }}
 
   {% if page.nav_branding or page.nav_main or page.nav_additional %}
-  
-	{{ page.nav_branding }}	
-  
-  
-  <nav class="{{ nav_classes }}">
+	<div class="row">
+		<div class="col-lg-9">
+		{{ page.nav_branding }}	
+		</div>
+		<div class="col-lg-3">
+		{{ page.nav_additional }}
+		</div>
+	</div>	
+    <nav class="{{ nav_classes }}">
     <div class="{{ b5_top_container }} d-flex">
       
 
@@ -75,8 +79,7 @@ set footer_classes = ' ' ~
       </button>
 
       <div class="collapse navbar-collapse justify-content-md-end flex-wrap" id="navbarSupportedContent">
-        {{ page.nav_main }}
-        {{ page.nav_additional }}
+        {{ page.nav_main }}        
       </div>
     </div>
   </nav>

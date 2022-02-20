@@ -82,3 +82,7 @@ span.field-content a
 	background-size: 16px;
 	background-position: 0 -48px;
 }	
+
+div.node__content {
+	padding-top: 10px;
+}
