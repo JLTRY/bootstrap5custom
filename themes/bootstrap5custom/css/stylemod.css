@@ -86,3 +86,14 @@ span.field-content a
 div.node__content {
 	padding-top: 10px;
 }
+
+@media (max-width: 780px){
+	.nav-link {	
+		max-width: 20%;
+	}
+}
+
+blockquote {
+	width: 80%;
+	background: none repeat scroll 0 0 #FFFFCCCC;
+}
