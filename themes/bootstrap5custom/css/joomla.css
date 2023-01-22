@@ -107,3 +107,47 @@ h3 {
 		min-height: 100px;
 	}
 }
+
+
+.web-jck {
+	background-image: url("http://images.jltryoen.fr/web-icon.png") !important;
+	background-position: left center !important;
+	background-repeat: no-repeat !important;
+	border-bottom-color: #C8C8C8;
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+	border-top-color: #C8C8C8;
+	border-top-style: dotted;
+	border-top-width: 1px;
+	display: block;
+	font-size: 14px;
+	margin-bottom: 10px !important;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+	margin-top: 10px !important;
+	padding-bottom: 7px !important;
+	padding-left: 35px !important;
+	padding-right: 10px !important;
+	padding-top: 7px !important;
+	text-shadow: 1px 1px 1px #FFFFFF;
+	transition-delay: 0s;
+	transition-duration: 800ms;
+	transition-property: background-color;
+	transition-timing-function: ease-in-out;
+	color: #444444 !important;
+}
+
+[class*="-jck"]:hover, a.[class*="-jck"]:hover  {
+	background-color: #F2F2F2 !important;
+	background-repeat: no-repeat !important;
+	transition-delay: 0s;
+	transition-duration: 400ms;
+	transition-property: background-color;
+	transition-timing-function: ease-in-out;
+}
+
+[class*="-jck"]
+{
+	max-width:94% !important;
+
+}

@@ -1,13 +1,14 @@
 global-custom-styling:
+  version: '1.0.x'  
   css:
     theme:
       css/stylemod.css: {}
       css/joomla.css: {}
-
-style-guide:
-  version: '5.1.3'
+      /joomla_4.0/plugins/editors/jckeditor/typography/typography.css: {}
   js:
-  css:
-    theme:        
+    js/empty.js: {}
   dependencies:
+
+
+
 
