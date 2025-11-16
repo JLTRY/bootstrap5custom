@@ -1,5 +1,3 @@
-@import url("http://www.jltryoen.fr/plugins/editors/jckeditor/typography/typography.css");
-
 body
 {
 	border-top: 3px solid #0088cc;
@@ -13,7 +11,7 @@ body {
 
 body {
     border-top-width: 0 !important;
-	background: #fafafa url('http://images.jltryoen.fr/headbg.jpg') top left no-repeat fixed !important;
+	background: #fafafa url('https://images.jltryoen.fr/headbg.jpg') top left no-repeat fixed !important;
 }
 
 body .flex-column {
