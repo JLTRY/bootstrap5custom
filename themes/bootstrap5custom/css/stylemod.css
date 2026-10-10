@@ -128,3 +128,8 @@ blockquote {
 .tab {
   margin-left: 40px;
 }
+
+
+.nav-link.active.is-active {
+	background: none !important;
+}
