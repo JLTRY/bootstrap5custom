@@ -60,31 +60,42 @@ set footer_classes = ' ' ~
   {{ page.header }}
 
   {% if page.nav_branding or page.nav_main or page.nav_additional %}
-	<div class="row">
-		<div class="col-lg-9">
-		{{ page.nav_branding }}	
-		</div>
-		<div class="col-lg-3">
-		{{ page.nav_additional }}
-		</div>
-	</div>	
-    <nav class="{{ nav_classes }}">
-    <div class="{{ b5_top_container }} d-flex">
-      
-
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-              aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse justify-content-md-end flex-wrap" id="navbarSupportedContent">
-        {{ page.nav_main }}        
+    <div class="row">
+      <div class="col-lg-9">
+        {{ page.nav_branding }}
+      </div>
+      <div class="col-lg-3">
+        {{ page.nav_additional }}
       </div>
     </div>
-  </nav>
-  {% endif %}
 
+    <nav class="{{ nav_classes }}">
+      <div class="{{ b5_top_container }} d-flex align-items-center">
+        <button class="navbar-toggler offcanvas-menu-toggle d-lg-none" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#bootstrap5custom-offcanvas"
+                aria-controls="bootstrap5custom-offcanvas" aria-expanded="false"
+                aria-label="{{ 'Toggle navigation'|t }}">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-md-end flex-wrap d-none d-lg-block" id="navbarSupportedContent">
+          {{ page.nav_main }}
+        </div>
+      </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="bootstrap5custom-offcanvas"
+         aria-labelledby="bootstrap5custom-offcanvas-label">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="bootstrap5custom-offcanvas-label">{{ 'Menu'|t }}</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="{{ 'Close menu'|t }}"></button>
+      </div>
+      <div class="offcanvas-body">
+        {{ page.nav_main }}
+      </div>
+    </div>
+  {% endif %}
 </header>
 
 <main role="main">
@@ -101,7 +112,6 @@ set footer_classes = ' ' ~
   {%
   set content_classes = (page.sidebar_first and page.sidebar_second) ? 'col-12 col-lg-6' : ((page.sidebar_first or page.sidebar_second) ? 'col-12 col-lg-9' : 'col-12' )
    %}
-
 
   <div class="{{ b5_top_container }}">
     {% if page.breadcrumb %}
@@ -123,21 +133,20 @@ set footer_classes = ' ' ~
       {% endif %}
     </div>
   </div>
- 
-{% if page.nav_horz_zone_1 or page.horz_zone_2 or page.horz_zone_3 %}	
-	 <div class="row">
-		<div class="col-lg-4">
-			{{ page.horz_zone_1 }}
-		</div>
-		<div class="col-lg-4">
-			{{ page.horz_zone_2 }}
-		</div>
-		<div class="col-lg-4">
-			{{ page.horz_zone_3 }}
-		</div>
-	</div>
-{% endif %}	
-  
+
+  {% if page.nav_horz_zone_1 or page.horz_zone_2 or page.horz_zone_3 %}
+    <div class="row">
+      <div class="col-lg-4">
+        {{ page.horz_zone_1 }}
+      </div>
+      <div class="col-lg-4">
+        {{ page.horz_zone_2 }}
+      </div>
+      <div class="col-lg-4">
+        {{ page.horz_zone_3 }}
+      </div>
+    </div>
+  {% endif %}
 </main>
 
 {% if page.footer %}

@@ -1,14 +1,14 @@
 global-custom-styling:
-  version: '1.0.x'  
+  version: '1.0.x'
   css:
     theme:
       css/stylemod.css: {}
       css/joomla.css: {}
       /joomla_4.0/plugins/editors/jckeditor/typography/typography.css: {}
+  js: {}
+  dependencies: []
+
+global-scripts:
+  version: '1.0.x'
   js:
-    js/empty.js: {}
-  dependencies:
-
-
-
-
+    js/offcanvas-menu.js: {}
