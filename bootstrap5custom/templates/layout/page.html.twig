@@ -56,21 +56,16 @@ set footer_classes = ' ' ~
   (b5_footer_bg_schema != 'none' ? " bg-#{b5_footer_bg_schema}" : ' ')
 %}
 
-<header>
+<header class="d-flex flex-column">
   {{ page.header }}
 
   {% if page.nav_branding or page.nav_main or page.nav_additional %}
-    <div class="row">
-      <div class="col-lg-9">
+    <div>
         {{ page.nav_branding }}
-      </div>
-      <div class="col-lg-3">
-        {{ page.nav_additional }}
-      </div>
     </div>
 
     <nav class="{{ nav_classes }}">
-      <div class="{{ b5_top_container }} d-flex align-items-center">
+      <div class="{{ b5_top_container }} d-flex align-items-center grid-child">
         <button class="navbar-toggler offcanvas-menu-toggle d-lg-none" type="button"
                 data-bs-toggle="offcanvas" data-bs-target="#bootstrap5custom-offcanvas"
                 aria-controls="bootstrap5custom-offcanvas" aria-expanded="false"
@@ -81,19 +76,21 @@ set footer_classes = ' ' ~
         <div class="collapse navbar-collapse justify-content-md-end flex-wrap d-none d-lg-block" id="navbarSupportedContent">
           {{ page.nav_main }}
         </div>
+		{{ page.nav_additional }}
       </div>
     </nav>
 
     <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="bootstrap5custom-offcanvas"
          aria-labelledby="bootstrap5custom-offcanvas-label">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="bootstrap5custom-offcanvas-label">{{ 'Menu'|t }}</h5>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                 aria-label="{{ 'Close menu'|t }}"></button>
       </div>
+	  {{ page.nav_branding }}
       <div class="offcanvas-body">
         {{ page.nav_main }}
       </div>
+	  {{ page.nav_additional }}
     </div>
   {% endif %}
 </header>

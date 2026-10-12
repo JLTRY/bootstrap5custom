@@ -12,3 +12,4 @@ global-scripts:
   version: '1.0.x'
   js:
     js/offcanvas-menu.js: {}
+    js/megamenu.js: {}
